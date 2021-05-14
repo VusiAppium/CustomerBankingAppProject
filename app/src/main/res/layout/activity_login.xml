@@ -14,18 +14,18 @@
         android:layout_marginLeft="60dp"
         android:orientation="vertical">
         <EditText
-            android:id="@+id/EdtUsername"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:backgroundTint="@color/colorAccent"
-            android:text="Enter Your Password Here"/>
-
-        <EditText
-            android:id="@+id/EdtPassword"
+            android:id="@+id/edtUsername"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:backgroundTint="@color/colorAccent"
             android:text="Enter Your Username Here"/>
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Enter Your Password Here"/>
 
         <Button
             android:id="@+id/btnSignIn"

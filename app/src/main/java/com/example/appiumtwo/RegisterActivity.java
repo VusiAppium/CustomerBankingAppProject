@@ -11,7 +11,7 @@ import io.appium.java_client.android.StartsActivity;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    private EditText edtIdNumber,edtUsername,edtPassword, edtName, edtSurname,edtEmail;
+    private EditText edtIdNumber,edtUsername,edtConfirmPassword,edtPassword, edtName, edtSurname,edtEmail;
 
 
     @Override
@@ -25,6 +25,7 @@ public class RegisterActivity extends AppCompatActivity {
         edtIdNumber = (EditText) findViewById(R.id.EdtIDNumber);
         edtUsername = (EditText) findViewById(R.id.EdtUsername);
         edtPassword = (EditText) findViewById(R.id.EdtPassword);
+        edtConfirmPassword = (EditText) findViewById(R.id.EdtConfirmPassword);
 
     }
 
@@ -36,6 +37,7 @@ public class RegisterActivity extends AppCompatActivity {
         String idNumber = edtIdNumber.getText().toString();
         String username = edtUsername.getText().toString();
         String password = edtPassword.getText().toString();
+        String confirmPassword = edtPassword.getText().toString();
 
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);

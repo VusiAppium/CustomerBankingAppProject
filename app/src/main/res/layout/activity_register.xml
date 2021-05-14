@@ -55,6 +55,13 @@
             android:backgroundTint="@color/colorAccent"
             android:text="Enter Your Password Here"/>
 
+        <EditText
+            android:id="@+id/EdtConfirmPassword"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Enter Your Confirm Password Here"/>
+
         <Button
             android:id="@+id/btnSignUp"
             android:layout_width="300dp"
