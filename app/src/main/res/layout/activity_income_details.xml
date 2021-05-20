@@ -4,35 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    tools:context=".MainActivity">
+    tools:context=".IncomeDetailsActivity">
 
     <LinearLayout
-        android:id="@+id/linearMain"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="300dp"
         android:layout_marginLeft="60dp"
         android:orientation="vertical">
-        <Button
-            android:id="@+id/btnLogin"
+        <EditText
+            android:id="@+id/edtNetSalary"
             android:layout_width="300dp"
             android:layout_height="50dp"
-            android:background="@drawable/ic_button_background"
-            android:onClick="login"
-            android:text="Login"/>
+            android:backgroundTint="@color/colorAccent"
+            android:text="Enter Your Net Salary Here"/>
+
+        <EditText
+            android:id="@+id/edtGrossSalary"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Enter Gross Salary Here"/>
+
+
+        <EditText
+            android:id="@+id/edtPaymentDay"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Enter Your Payment Day Here"/>
 
         <Button
-            android:id="@+id/btnRegister"
+            android:id="@+id/btnNext"
             android:layout_width="300dp"
             android:layout_height="50dp"
+            android:onClick="addressDetails"
             android:background="@drawable/ic_button_background"
-            android:onClick="register"
-            android:text="Register"/>
+            android:text="Next"/>
 
     </LinearLayout>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,24 +2,27 @@ package com.example.appiumtwo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class AddressDetailsActivity extends AppCompatActivity {
     private EditText edtAddressLine1,edtAddressLine2,edtCity,edtProvince,edtPostalCode;
+    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_address_details);
 
-        edtAddressLine1 = (EditText) findViewById(R.id.EdtAddressLine1);
-        edtAddressLine2 = (EditText) findViewById(R.id.EdtAddressLine2);
-        edtCity = (EditText) findViewById(R.id.EdtCity);
-        edtProvince = (EditText) findViewById(R.id.EdtProvince);
-        edtPostalCode = (EditText) findViewById(R.id.EdtPostalCode);
+        edtAddressLine1 = (EditText) findViewById(R.id.edtAddressLine1);
+        edtAddressLine2 = (EditText) findViewById(R.id.edtAddressLine2);
+        edtCity = (EditText) findViewById(R.id.edtCity);
+        edtProvince = (EditText) findViewById(R.id.edtProvince);
+        edtPostalCode = (EditText) findViewById(R.id.edtPostalCode);
     }
 
     public void addressDetails(View view)
@@ -32,5 +35,7 @@ public class AddressDetailsActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this,AddressDetailsActivity.class);
         startActivity(intent);
+
+        Toast.makeText(context,"Loading....",Toast.LENGTH_SHORT).show();
     }
 }

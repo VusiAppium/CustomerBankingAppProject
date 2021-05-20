@@ -2,15 +2,18 @@ package com.example.appiumtwo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import io.appium.java_client.android.StartsActivity;
 
 public class RegisterActivity extends AppCompatActivity {
 
+    Context context;
     private EditText edtIdNumber,edtUsername,edtConfirmPassword,edtPassword, edtName, edtSurname,edtEmail;
 
 
@@ -41,5 +44,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
+
+        Toast.makeText(context,"Loading....",Toast.LENGTH_SHORT).show();
     }
 }
